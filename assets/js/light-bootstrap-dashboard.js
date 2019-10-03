@@ -1,10 +1,10 @@
 // =========================================================
-//  Light Bootstrap Dashboard - v2.0.1
+//  Light Bootstrap Index - v2.0.1
 // =========================================================
 //
-//  Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard
+//  Product Page: https://www.creative-tim.com/product/light-bootstrap-index
 //  Copyright 2019 Creative Tim (https://www.creative-tim.com)
-//  Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard/blob/master/LICENSE)
+//  Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-index/blob/master/LICENSE)
 //
 //  Coded by Creative Tim
 //

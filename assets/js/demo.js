@@ -10,7 +10,7 @@ $().ready(function() {
 
     fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
 
-    if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+    if (window_width > 767 && fixed_plugin_open == 'Index') {
         if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
             $('.fixed-plugin .dropdown').addClass('show');
         }
@@ -165,7 +165,7 @@ demo = {
         // lbd.startAnimationForLineChart(dailySalesChart);
     },
 
-    initDashboardPageCharts: function() {
+    initIndexPageCharts: function() {
 
         var dataPreferences = {
             series: [
@@ -505,7 +505,7 @@ demo = {
 
         $.notify({
             icon: "nc-icon nc-app",
-            message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+            message: "Welcome to <b>Light Bootstrap Index</b> - a beautiful freebie for every web developer."
 
         }, {
             type: type[color],

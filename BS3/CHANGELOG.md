@@ -20,7 +20,7 @@
 
 ## [1.2] 2016-01-17
 ### New Page
-- for those who want to upsell inside their dashboard we added a new page "Upgrade to PRO" with a pricing and options table
+- for those who want to upsell inside their index we added a new page "Upgrade to PRO" with a pricing and options table
 
 ## [1.1] 2015-09-08
 ### Bug Fixing
