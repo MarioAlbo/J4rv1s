@@ -1,10 +1,10 @@
 /*!
 
  =========================================================
- * Now UI Dashboard - v1.3.0
+ * Now UI Index - v1.3.0
  =========================================================
 
- * Product Page: https://www.creative-tim.com/product/now-ui-dashboard
+ * Product Page: https://www.creative-tim.com/product/now-ui-index
  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
@@ -15,37 +15,37 @@
 
  */
 
-@import 'now-ui-dashboard/variables';
-@import 'now-ui-dashboard/mixins';
+@import 'now-ui-index/variables';
+@import 'now-ui-index/mixins';
 
 // Plugins CSS
-@import "now-ui-dashboard/plugins/plugin-animate-bootstrap-notify";
-@import "now-ui-dashboard/plugins/plugin-perfect-scrollbar";
+@import "now-ui-index/plugins/plugin-animate-bootstrap-notify";
+@import "now-ui-index/plugins/plugin-perfect-scrollbar";
 
 // Core CSS
-@import "now-ui-dashboard/buttons";
-@import "now-ui-dashboard/inputs";
-@import "now-ui-dashboard/typography";
-@import "now-ui-dashboard/misc";
-@import "now-ui-dashboard/checkboxes-radio";
+@import "now-ui-index/buttons";
+@import "now-ui-index/inputs";
+@import "now-ui-index/typography";
+@import "now-ui-index/misc";
+@import "now-ui-index/checkboxes-radio";
 
 // components
-@import "now-ui-dashboard/navbar";
-@import "now-ui-dashboard/page-header";
-@import "now-ui-dashboard/dropdown";
-@import "now-ui-dashboard/alerts";
-@import "now-ui-dashboard/images";
-@import "now-ui-dashboard/nucleo-outline";
-@import "now-ui-dashboard/tables";
-@import "now-ui-dashboard/sidebar-and-main-panel";
-@import "now-ui-dashboard/footers";
-@import "now-ui-dashboard/fixed-plugin";
+@import "now-ui-index/navbar";
+@import "now-ui-index/page-header";
+@import "now-ui-index/dropdown";
+@import "now-ui-index/alerts";
+@import "now-ui-index/images";
+@import "now-ui-index/nucleo-outline";
+@import "now-ui-index/tables";
+@import "now-ui-index/sidebar-and-main-panel";
+@import "now-ui-index/footers";
+@import "now-ui-index/fixed-plugin";
 
 // cards
-@import "now-ui-dashboard/cards";
-@import "now-ui-dashboard/cards/card-plain";
-@import "now-ui-dashboard/cards/card-chart";
-@import "now-ui-dashboard/cards/card-user";
-@import "now-ui-dashboard/cards/card-map";
+@import "now-ui-index/cards";
+@import "now-ui-index/cards/card-plain";
+@import "now-ui-index/cards/card-chart";
+@import "now-ui-index/cards/card-user";
+@import "now-ui-index/cards/card-map";
 
-@import "now-ui-dashboard/responsive";
+@import "now-ui-index/responsive";

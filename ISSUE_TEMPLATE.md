@@ -1,7 +1,7 @@
 <!--
  IMPORTANT: Please use the following link to create a new issue:
 
-  https://www.creative-tim.com/new-issue/now-ui-dashboard
+  https://www.creative-tim.com/new-issue/now-ui-index
 
 **If your issue was not created using the app above, it will be closed immediately.**
 -->

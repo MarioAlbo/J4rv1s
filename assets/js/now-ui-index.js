@@ -1,10 +1,10 @@
 /*!
 
  =========================================================
- * Now UI Dashboard - v1.3.0
+ * Now UI Index - v1.3.0
  =========================================================
 
- * Product Page: https://www.creative-tim.com/product/now-ui-dashboard
+ * Product Page: https://www.creative-tim.com/product/now-ui-index
  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
@@ -60,8 +60,8 @@ $(document).ready(function() {
 
   // Check if we have the class "navbar-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
   if ($('.navbar[color-on-scroll]').length != 0) {
-    nowuiDashboard.checkScrollForTransparentNavbar();
-    $(window).on('scroll', nowuiDashboard.checkScrollForTransparentNavbar)
+    nowuiIndex.checkScrollForTransparentNavbar();
+    $(window).on('scroll', nowuiIndex.checkScrollForTransparentNavbar)
   }
 
   $('.form-control').on("focus", function() {
@@ -86,9 +86,9 @@ $(document).ready(function() {
 $(document).on('click', '.navbar-toggle', function() {
   $toggle = $(this);
 
-  if (nowuiDashboard.misc.navbar_menu_visible == 1) {
+  if (nowuiIndex.misc.navbar_menu_visible == 1) {
     $('html').removeClass('nav-open');
-    nowuiDashboard.misc.navbar_menu_visible = 0;
+    nowuiIndex.misc.navbar_menu_visible = 0;
     setTimeout(function() {
       $toggle.removeClass('toggled');
       $('#bodyClick').remove();
@@ -102,7 +102,7 @@ $(document).on('click', '.navbar-toggle', function() {
     div = '<div id="bodyClick"></div>';
     $(div).appendTo('body').click(function() {
       $('html').removeClass('nav-open');
-      nowuiDashboard.misc.navbar_menu_visible = 0;
+      nowuiIndex.misc.navbar_menu_visible = 0;
       setTimeout(function() {
         $toggle.removeClass('toggled');
         $('#bodyClick').remove();
@@ -110,7 +110,7 @@ $(document).on('click', '.navbar-toggle', function() {
     });
 
     $('html').addClass('nav-open');
-    nowuiDashboard.misc.navbar_menu_visible = 1;
+    nowuiIndex.misc.navbar_menu_visible = 1;
   }
 });
 
@@ -135,7 +135,7 @@ $(window).resize(function() {
   }
 });
 
-nowuiDashboard = {
+nowuiIndex = {
   misc: {
     navbar_menu_visible: 0
   },
@@ -145,7 +145,7 @@ nowuiDashboard = {
 
     $.notify({
       icon: "now-ui-icons ui-1_bell-53",
-      message: "Welcome to <b>Now Ui Dashboard</b> - a beautiful freebie for every web developer."
+      message: "Welcome to <b>Now Ui Index</b> - a beautiful freebie for every web developer."
 
     }, {
       type: color,
