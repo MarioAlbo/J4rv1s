@@ -1,41 +1,29 @@
 # Change Log
 
-## [2.0.0] 2017-12-11
-### Major Release
-- update to Bootstrap 4 Beta
-- added new icons by Nucleo
-- bug fixes and improvements
-- code refactoring
+## [1.3.0] 2019-02-08
+### Updates, Bugfixing, Improvements
+- added latest version of Bootstrap `4.2.1`
+- all plugins out of date were updated to the latest version
+- `btn-simple` removed
+- added `btn-outline` from the bootstrap
+- docs updated all plugins versions
 
-## [1.4.0] 2017-11-02
-### Library Updates
-- jQuery - `3.2.1`
-- bootstrap - `3.3.7`
-- chartist - `0.11.0`
+## [1.2.0] 2018-10-12
+### Bootstrap 4.1.3 update
+- `Chart.js` library updated
+- Responsive fixes
+- Other small bug fixes
 
-### Bug Fixing
-- replaced old javascript checkboxes and radios with only css checkboxes and radios
-- fixed responsive sidebar
-- small bug fixes
+## [1.1.0] 2018-05-04
+### Bootstrap 4.1.0 update
+- Archive cleaned
+- Other small bug fixes
 
-## [1.3.1] 2017-01-19
-- switched to MIT license
+## [1.0.1] 2018-02-21
+### Bugfixing
+- Fixed some issues for documentation pages
+- Scss cleaned
+- Other bug fixes
 
-## [1.3] 2016-01-22
-### New Template page + Video Tutorial [current version]
-- added the default template page + youtube video tutorial on how to create an Admin Template (link: https://www.youtube.com/watch...)
-
-## [1.2] 2016-01-17
-### New Page
-- for those who want to upsell inside their index we added a new page "Upgrade to PRO" with a pricing and options table
-
-## [1.1] 2015-09-08
-### Bug Fixing
-- added company name/logo inside the sidebar for small screens
-- fixed bug for notification with close button on small screens
-- fix live preview bug for download on small screens
-- fix table responsive for small screens
-- added new labels for chartist on small screens
-
-## [1.0] 2015-08-20
-### Initial Release
+## [1.0.0] 2018-02-14
+### Original Release
