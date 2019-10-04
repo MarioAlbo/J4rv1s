@@ -76,33 +76,43 @@
                     <form>
                         <div class="row">
                             <div class="col-md-3 pr-1">
+                                <label>Coses que vull fer</label><br>
                                 <div class="form-group">
-                                    <label for="camps-favorables">Camps que m'agraden</label><br>
-                                    <select class="camps-favorables" multiple>
-                                        <option selected>Tecnologia</option>
-                                        <option value="1">Ciències de la salut</option>
-                                        <option value="2">Marketing</option>
-                                        <option value="3">Finances</option>
-                                        <option value="4">Humanitats</option>
-                                    </select>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="Tecnologia">
+                                        <label class="custom-control-label" for="Tecnologia">Tecnologia</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="Ciències de la salut">
+                                        <label class="custom-control-label" for="Ciències de la salut">Ciències de la salut</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="Marketing">
+                                        <label class="custom-control-label" for="Marketing">Marketing</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="Finances">
+                                        <label class="custom-control-label" for="Finances">Finances</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="Humanitats">
+                                        <label class="custom-control-label" for="Humanitats">Humanitats</label><br>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 px-1">
                                 <div class="form-group">
-                                    <label for="camps-desfavorables">Camps que no m'agraden</label><br>
-                                    <select class="camps-desfavorables" multiple>
-                                        <option selected>Ciències de la salut</option>
-                                        <option value="1">Tecnologia</option>
-                                        <option value="2">Marketing</option>
-                                        <option value="3">Finances</option>
-                                        <option value="4">Humanitats</option>
-                                    </select>
+                                    <label>Coses que no vull fer</label><br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="NoTecnologia">
+                                        <label class="custom-control-label" for="NoTecnologia">Tecnologia</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="NoCiències de la salut">
+                                        <label class="custom-control-label" for="NoCiències de la salut">Ciències de la salut</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="NoMarketing">
+                                        <label class="custom-control-label" for="NoMarketing">Marketing</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="NoFinances">
+                                        <label class="custom-control-label" for="NoFinances">Finances</label><br>
+                                        <input type="checkbox" class="custom-control-input" id="NoHumanitats">
+                                        <label class="custom-control-label" for="NoHumanitats">Humanitats</label><br>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 pl-1">
                                 <div class="form-group">
                                     <label for="estudis">Estudis</label><br>
-                                    <select id="estudis">
+                                    <select id="estudis" class="browser-default custom-select">
                                         <option selected>ESO</option>
                                         <option value="1">Batxillerat</option>
                                         <option value="2">Grau mitja</option>
@@ -117,7 +127,7 @@
                             <div class="col-md-6 pr-1">
                                 <div class="form-group">
                                     <label for="empresa">Mida Empresa</label><br>
-                                    <select class="empresa">
+                                    <select class="browser-default custom-select" id="empresa">
                                         <option selected>Petita</option>
                                         <option value="1">Mitjana</option>
                                         <option value="2">Gran</option>
@@ -127,7 +137,7 @@
                             <div class="col-md-6 pl-1">
                                 <div class="form-group">
                                     <label for="pasta">Rellevança del sou</label><br>
-                                    <select class="pasta">
+                                    <select class="browser-default custom-select" id="pasta">
                                         <option selected>Baixa</option>
                                         <option value="1">Mitjana</option>
                                         <option value="2">Alta</option>
