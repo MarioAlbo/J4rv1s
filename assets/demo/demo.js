@@ -222,9 +222,9 @@ demo = {
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
         datasets: [{
-          label: "Data",
+          label: "Treballadors",
           borderColor: chartColor,
           pointBorderColor: chartColor,
           pointBackgroundColor: "#1e3d60",
@@ -237,7 +237,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+          data: [500, 600, 720, 800, 890, 1000, 1250, 1400, 1700, 2000, 2400, 2600]
         }]
       },
       options: {
@@ -262,7 +262,7 @@ demo = {
         },
         legend: {
           position: "bottom",
-          fillStyle: "#FFF",
+          fillStyle: "#FF",
           display: false
         },
         scales: {
@@ -316,23 +316,23 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027"],
         datasets: [{
-          label: "Active Users",
+          label: "Sou",
           borderColor: "#f96332",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#f96332",
           pointBorderWidth: 2,
-          pointHoverRadius: 4,
+          pointHoverRadius: 2,
           pointHoverBorderWidth: 1,
           pointRadius: 4,
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [28200, 30200, 31500, 32300, 32900, 33400, 33900, 34270]
         }]
       },
-      options: gradientChartOptionsConfiguration
+      options: gradientChartOptionsConfigurationWithNumbersAndGrid
     });
 
 
@@ -350,9 +350,9 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
+        labels:["2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027"],
         datasets: [{
-          label: "Email Stats",
+          label: "Projectes",
           borderColor: "#18ce0f",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#18ce0f",
@@ -363,7 +363,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+          data: [100, 150, 195, 230, 253, 270, 285, 295]
         }]
       },
       options: gradientChartOptionsConfigurationWithNumbersAndGrid
@@ -376,11 +376,11 @@ demo = {
     gradientFill.addColorStop(1, hexToRGB('#2CA8FF', 0.6));
 
     var a = {
-      type: "bar",
+      type: "line",
       data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        labels: ["2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027"],
         datasets: [{
-          label: "Active Countries",
+          label: "Treballadors",
           backgroundColor: gradientFill,
           borderColor: "#2CA8FF",
           pointBorderColor: "#FFF",
@@ -391,7 +391,7 @@ demo = {
           pointRadius: 4,
           fill: true,
           borderWidth: 1,
-          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155]
+          data: [2820, 3120, 3340, 3510, 3630, 3760, 3850, 3900]
         }]
       },
       options: {
