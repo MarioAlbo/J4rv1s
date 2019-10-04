@@ -7,16 +7,27 @@ function onSubmit() {
         document.getElementById('noRecomendations').hidden = true;
         switch (duracio) {
             case 0:
+                if (document.getElementById('pasta').selectedIndex == 2) {
+                    document.getElementById('bootcamp').hidden = true;
+                    document.getElementById('superior').hidden = true;
+                    document.getElementById('grau').hidden = false;
+                } else {
+                    document.getElementById('bootcamp').hidden = false;
+                    document.getElementById('superior').hidden = false;
+                    document.getElementById('grau').hidden = false;
+                }
+                break;
+            case 1:
                 document.getElementById('bootcamp').hidden = false;
                 document.getElementById('superior').hidden = true;
                 document.getElementById('grau').hidden = true;
                 break;
-            case 1:
+            case 2:
                 document.getElementById('bootcamp').hidden = true;
                 document.getElementById('superior').hidden = false;
                 document.getElementById('grau').hidden = true;
                 break;
-            case 2:
+            case 3:
                 document.getElementById('bootcamp').hidden = true;
                 document.getElementById('superior').hidden = true;
                 document.getElementById('grau').hidden = false;
