@@ -238,7 +238,38 @@ demo = {
           backgroundColor: gradientFill,
           borderWidth: 2,
           data: [500, 600, 720, 800, 890, 1000, 1250, 1400, 1700, 2000, 2400, 2600]
-        }]
+        },{
+          label: "Homes",
+          borderColor: chartColor,
+          pointBorderColor: chartColor,
+          pointBackgroundColor: "#9d601e",
+          pointHoverBackgroundColor: "#9d601e",
+          pointHoverBorderColor: chartColor,
+          pointBorderWidth: 1,
+          pointHoverRadius: 7,
+          pointHoverBorderWidth: 2,
+          pointRadius: 5,
+          fill: true,
+          backgroundColor: gradientFill,
+          borderWidth: 2,
+          data: [450, 525, 650, 700, 790, 850, 1000, 1175, 1400, 1600, 1900, 2050]
+        },{
+          label: "Dones",
+          borderColor: chartColor,
+          pointBorderColor: chartColor,
+          pointBackgroundColor: "#669933",
+          pointHoverBackgroundColor: "#669933",
+          pointHoverBorderColor: chartColor,
+          pointBorderWidth: 1,
+          pointHoverRadius: 7,
+          pointHoverBorderWidth: 2,
+          pointRadius: 5,
+          fill: true,
+          backgroundColor: gradientFill,
+          borderWidth: 2,
+          data: [50, 75, 70, 100, 100, 150, 250, 225, 300, 400, 500, 550]
+        },
+        ]
       },
       options: {
         layout: {

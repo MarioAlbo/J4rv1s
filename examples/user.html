@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>
-        Now UI Index by Creative Tim
+        J4rv1s
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
           name='viewport'/>
@@ -22,7 +22,7 @@
     <link href="../assets/demo/demo.css" rel="stylesheet"/>
 </head>
 
-<body class="user-profile">
+<body class="user-profile" onload="onLoad2()">
 <div class="wrapper ">
     <div class="sidebar" data-color="orange">
         <div class="sidebar-wrapper" id="sidebar-wrapper">
@@ -69,24 +69,33 @@
         </div>
         <div class="mario">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="margin-left: 3vw">
                     <h5 class="title">Paràmetres</h5>
                 </div>
-                <div class="card-body">
-                    <form>
+                <div class="card-body" style="margin-left: 3vw">
+                    <form accept-charset="UTF-8">
                         <div class="row">
                             <div class="col-md-3 pr-1">
-                                <label>Coses que vull fer</label><br>
+                                <label>Sectors que t'interessen</label><br>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="Tecnologia">
                                         <label class="custom-control-label" for="Tecnologia">Tecnologia</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="Ciències de la salut">
-                                        <label class="custom-control-label" for="Ciències de la salut">Ciències de la salut</label><br>
+                                        <label class="custom-control-label" for="Ciències de la salut">Ciències de la
+                                            salut</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="Marketing">
                                         <label class="custom-control-label" for="Marketing">Marketing</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="Finances">
                                         <label class="custom-control-label" for="Finances">Finances</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="Humanitats">
                                         <label class="custom-control-label" for="Humanitats">Humanitats</label><br>
                                     </div>
@@ -94,16 +103,25 @@
                             </div>
                             <div class="col-md-3 px-1">
                                 <div class="form-group">
-                                    <label>Coses que no vull fer</label><br>
+                                    <label>Sectors que no t'interessen</label><br>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="NoTecnologia">
                                         <label class="custom-control-label" for="NoTecnologia">Tecnologia</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="NoCiències de la salut">
-                                        <label class="custom-control-label" for="NoCiències de la salut">Ciències de la salut</label><br>
+                                        <label class="custom-control-label" for="NoCiències de la salut">Ciències de la
+                                            salut</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="NoMarketing">
                                         <label class="custom-control-label" for="NoMarketing">Marketing</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="NoFinances">
                                         <label class="custom-control-label" for="NoFinances">Finances</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="NoHumanitats">
                                         <label class="custom-control-label" for="NoHumanitats">Humanitats</label><br>
                                     </div>
@@ -111,14 +129,11 @@
                             </div>
                             <div class="col-md-3 pl-1">
                                 <div class="form-group">
-                                    <label for="estudis">Estudis</label><br>
+                                    <label for="estudis">Duració d'estudis desitjada</label><br>
                                     <select id="estudis" class="browser-default custom-select">
-                                        <option selected>ESO</option>
-                                        <option value="1">Batxillerat</option>
-                                        <option value="2">Grau mitja</option>
-                                        <option value="3">Grau superior</option>
-                                        <option value="4">Grau universitari</option>
-                                        <option value="5">Postgrau</option>
+                                        <option value="Curta duració">Curta duració</option>
+                                        <option value="Graus mitjans i superiors">Graus mitjans i superiors</option>
+                                        <option value="Educació universitària" selected>Educació universitària</option>
                                     </select>
                                 </div>
                             </div>
@@ -128,9 +143,10 @@
                                 <div class="form-group">
                                     <label for="empresa">Mida Empresa</label><br>
                                     <select class="browser-default custom-select" id="empresa">
-                                        <option selected>Petita</option>
-                                        <option value="1">Mitjana</option>
-                                        <option value="2">Gran</option>
+                                        <option value="petita" selected>Petita</option>
+                                        <option value="mitjana">Mitjana</option>
+                                        <option value="gran">Gran</option>
+                                        <option value="multinacional">Multinacional</option>
                                     </select>
                                 </div>
                             </div>
@@ -145,20 +161,80 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="button-container" style="display: flex; justify-content: center">
+                            <button onclick="onSubmit()" type="button">Enviar dades</button>
+                        </div>
                     </form>
+                </div>
+            </div>
+            <div id="separator" style="height:50vh"></div>
+            <div id="recomenacions" class="card">
+                <div class="card-header" style="margin-left: 3vw">
+                    <h5 class="title">Recomanacions</h5>
+                </div>
+                <div id="bootcamp" style="margin: 4vh 4vw; padding: 1vh 1vw; border: 1px solid #f96332; display: flex; justify-content: space-between">
+                    <div>
+                        <b>Curs: </b> Curs formatiu de web Development <br>
+                        <b> Duració: </b> 11 setmanes<br>
+                        <b>Centre: </b> Skylab Coders Academy <br>
+                    </div>
+                    <div >
+                        <b>Salari mig als 2 anys:</b>
+                        <div style="display: flex"><p style="font-size: x-large">15.000 </p>€/any</div>
+                    </div>
+                    <div >
+                        <b>Salari mig a partir de 8 anys:</b>
+                        <div style="display: flex"><p style="font-size: x-large">25.000 </p>€/any</div>
+                    </div>
+                    <div style="display: flex; align-items: center">
+                        <a href="https://www.skylabcoders.com/en/"><b>Pàgina Web</b></a>
+                    </div>
+                </div>
+                <div id="superior" style="margin: 4vh 4vw; padding: 1vh 1vw; border: 1px solid #f96332; display: flex; justify-content: space-between">
+                    <div>
+                        <b>Curs: </b> Grau superior en Desenvolupament d'aplicacions multiplataforma <br>
+                        <b> Duració: </b> 2 anys<br>
+                        <b>Centre: </b> Skylab Coders Academy <br>
+                    </div>
+                    <div >
+                        <b>Salari mig als 2 anys:</b>
+                        <div style="display: flex"><p style="font-size: x-large">12.000 </p>€/any</div>
+                    </div>
+                    <div >
+                        <b>Salari mig a partir de 8 anys:</b>
+                        <div style="display: flex"><p style="font-size: x-large">27.000 </p>€/any</div>
+                    </div>
+                    <div style="display: flex; align-items: center">
+                        <a href="https://www.boscdelacoma.cat/estudis/cicles-formatius/cf-informatica/dam/"><b>Pàgina Web</b></a>
+                    </div>
+                </div>
+                <div id="grau" style="margin: 4vh 4vw; padding: 1vh 1vw; border: 1px solid #f96332; display: flex; justify-content: space-between">
+                    <div>
+                        <b>Curs: </b> Grau en enginyeria informàtica <br>
+                        <b>Duració: </b> 4 anys<br>
+                        <b>Centre: </b> UPC - FIB <br>
+                    </div>
+                    <div >
+                        <b>Salari mig als 2 anys:</b>
+                        <div style="display: flex"><p style="font-size: x-large">25.000 </p>€/any</div>
+                    </div>
+                    <div >
+                        <b>Salari mig a partir de 8 anys:</b>
+                        <div style="display: flex"><p style="font-size: x-large">50.000 </p>€/any</div>
+                    </div>
+                    <div style="display: flex; align-items: center">
+                        <a href="https://www.fib.upc.edu/ca/estudis/graus/grau-en-enginyeria-informatica"><b>Pàgina Web</b></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
-<!--   Core JS Files   -->
+
 <script src="../assets/js/core/jquery.min.js"></script>
 <script src="../assets/js/core/popper.min.js"></script>
 <script src="../assets/js/core/bootstrap.min.js"></script>
 <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!-- Chart JS -->
 <script src="../assets/js/plugins/chartjs.min.js"></script>
 <!--  Notifications Plugin    -->
@@ -167,6 +243,7 @@
 <script src="../assets/js/now-ui-index.min.js?v=1.3.0" type="text/javascript"></script>
 <!-- Now Ui Index DEMO methods, don't include it in your project! -->
 <script src="../assets/demo/demo.js"></script>
+<script src="../assets/js/functions.js"></script>
 </body>
 
 </html>
